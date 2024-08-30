@@ -18,7 +18,8 @@ namespace Expense_Tracker.Migrations
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(50)", nullable: false),
-                    Type = table.Column<string>(type: "nvarchar(10)", nullable: false)
+                    Type = table.Column<string>(type: "nvarchar(10)", nullable: false),
+                    Icon = table.Column<string>(type: "nvarchar(10)", nullable: false)
                 },
                 constraints: table =>
                 {
