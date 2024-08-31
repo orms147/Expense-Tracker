@@ -44,7 +44,7 @@ namespace Expense_Tracker.Migrations
 
                     b.HasKey("CategoryId");
 
-                    b.ToTable("Categories");
+                    b.ToTable("Categories", (string)null);
                 });
 
             modelBuilder.Entity("Expense_Tracker.Models.Transaction", b =>
@@ -72,7 +72,7 @@ namespace Expense_Tracker.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Transactions");
+                    b.ToTable("Transactions", (string)null);
                 });
 
             modelBuilder.Entity("Expense_Tracker.Models.Transaction", b =>
